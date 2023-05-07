@@ -1,13 +1,13 @@
 
 mixin card(oneCard)
-    figure.card-figure.text-center
-        figcaption 
+    figure.card-figure.cards-figure-padding
+        figcaption.d-flex.flex-column.align-items-center
             img(src=oneCard.img, alt=oneCard.alt, class="img") 
             h2= oneCard.text
             p.price #{oneCard.price}
             if oneCard.isStar
                 a(href="javascript:void();" class="star") 
-            p.desc.text-start #{oneCard.desc} 
+            p.desc #{oneCard.desc} 
 
 mixin trips(oneCard)
     figure.card-figure

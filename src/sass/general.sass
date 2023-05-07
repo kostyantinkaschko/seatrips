@@ -26,13 +26,16 @@ b
 .active-burger
     display: block
 
+.container-4k
+    +media(2560)
+        max-width: 1170rem
+
 .wrapper
     max-width: 1170rem
     margin: 0 auto
     padding: 0 50rem
 
 .cta
-    width: 154rem
     font-size: 16rem
     letter-spacing: 1rem
     text-transform: uppercase
@@ -55,7 +58,7 @@ header
     text-align: center
     background: linear-gradient(0, #f5f8fa 0%, transparent 25%), url(../img/bg.jpg)
     background-size: cover
-    background-position: center
+    background-position: bottom
     nav
         a
             text-decoration: none
@@ -136,6 +139,7 @@ header
             height: 20rem
             margin: 35rem 0
             background: url(../img/arrow.png)
+            background-size: contain
 
 .navbar-toggler
     filter: invert(1)
@@ -146,13 +150,19 @@ main
     .first-cards
         margin-bottom: 70rem
     .card-div
-        max-width: 350rem
-        +media(992)
-            max-width: 270rem
+        max-width: 270rem
     .cards
         row-gap: 40rem
     .cards-text
+        display: flex
         flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        text-align: center
+        +media(768)
+            justify-content: start
+            text-align: left
+
         width: 270rem
         h3
             font-size: 36rem
@@ -182,6 +192,9 @@ main
     .card-figure
         position: relative
         transition: all .5s ease
+        text-align: center
+        +media(768)
+            text-align: left
         &:hover
             background: #fff
             box-shadow: 0rem 4rem 10.5rem rgba(3,20,31,0.05)
@@ -215,119 +228,100 @@ main
             z-index: 3
         img
             margin-bottom: 25rem
+            +media(2560)
+                width: 65rem
     .all
+        margin-top: 40rem
         font-size: 12rem
         text-transform: uppercase
         color: #0099ff
         font-weight: 400
         font-family: "Rubik"
         text-align: center
-    .card-info
-        figcaption
-            column-gap: 60rem
-            display: flex
-            flex-direction: column
-            align-items: center
-            +media(992)
-                display: flex
-        .img-info
-            margin-bottom: 30rem
-            width: 100%
-            +media(992)
-                margin: 0
+        +media(2560)
             img
-                width: 100%
-        .info-text,
-        .info
-            margin-top: 25rem
-            display: flex
-            justify-content: center
-            flex-direction: column
-            +media(1300)
-                margin: 0
-            +media(992)
-                justify-content: start
-                align-items: start
-            +media(778)
-                flex-direction: row
+                width: 20rem
         img
-            width: 100%
-            +media(992)
-                width: auto
-                height: auto
-        h2
-            font-size: 36rem
-            text-transform: uppercase
-            color: #333333
-            font-weight: 400
-            font-family: "Rubik"
-        p
-            font-size: 16rem
-            color: #333333
-            font-weight: 400
-            font-style: italic
-            font-family: "Rubik"
-    .card-info
-        margin: 80rem 0
-        figcaption
-            +media(1300)
-                flex-direction: row
-        .cta-block
-            display: flex
-            flex-direction: column
-            align-items: center
-            row-gap: 30rem
-            margin-top: 35rem
-            column-gap: 10rem
-            +media(404)
-                flex-direction: row
-                align-content: start
-        .cta
-            width: 175rem
-    .info
-        p
-            +media(404)
-                width: 396rem
-            +media(1300)
-                margin-right: 50rem
-            +media(1400)
-                margin: 0
+            padding-left: 7rem
+    .island-card
+        figure
+            figcaption
+                .card-island
+                    display: flex
+                    column-gap: 30rem
+                    row-gap: 30rem
+                    margin: 80rem 0
+                    flex-direction: column
+                    text-align: center
+                    +media(1200)
+                        flex-direction: row
+                        text-align: left
+                    .card-picture
+                        img
+                            width: 100%
+                            height: 100%
+                            +media(2560)
+                                width: 417rem
+                            +mediaMax(1200)
+                                max-width: 520rem
+                                max-height: 430rem
+                    .headline
+                        font-size: 36rem
+                        line-height: 42rem
+                        text-transform: uppercase
+                        color: #333333
+                        font-weight: 400
+                        font-family: "Rubik"
+                    .content
+                        .content-additional
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            row-gap: 30rem
+                            +media(1200)
+                                flex-direction: row
+                                justify-content: space-between
+                            p:first-child
+                                margin: 25rem 0 35rem 0
+                                max-width: 465rem
+                                +media(2560)
+                                    max-width: 425rem
+                                font-size: 16rem
+                                line-height: 24rem
+                                color: #333333
+                                font-weight: 400
+                                font-style: italic
+                                font-family: "Rubik"
+                            .cta-block
+                                display: flex
+                                column-gap: 10rem
+                                row-gap: 25rem
+                                justify-content: center
+                                flex-direction: column
+                                +media(372)
+                                    flex-direction: row
+                                +media(1200)
+                                    justify-content: start
+                            .price-info
+                                max-width: 260rem
+                                padding: 20rem
+                                background-color: #edf2f5
 
-    .content
-        display: flex
-        flex-direction: column
-        align-items: center
-        +media(778)
-            justify-content: space-between
-        +media(1400)
-            justify-content: space-between
-            flex-direction: row
-        +media(1300)
-            justify-content: start
-            align-items: start
+                                h2
+                                    font-size: 24rem
+                                    line-height: 44rem
+                                    color: #0099ff
+                                    font-weight: 400
+                                    font-family: "Rubik"
+                                    text-align: center
+                                p
+                                    font-size: 13rem
+                                    line-height: 20rem
+                                    color: #999999
+                                    font-weight: 400
+                                    font-family: "Rubik"
+                                    text-align: center
 
-    .price-info
-        margin-top: 35rem
-        width: 260rem
-        height: 150rem
-        +media(404)
-            margin: 0
-        +media(1300)
-            margin: 30rem 0rem
-        padding: 40rem
-        background-color: #edf2f5
-        h2
-            font-size: 24rem
-            color: #0099ff
-            font-weight: 400
-            font-family: "Rubik"
-            text-align: center
-        p
-            font-size: 13rem
-            color: #999999
-            font-weight: 400
-            font-family: "Rubik"
-            text-align: center
     .customer
         padding: 90rem 0
         background: url(../img/bg2.jpg) no-repeat
@@ -348,7 +342,7 @@ main
             flex-direction: column
             align-items: center
             +media(992)
-                display: block
+                align-items: start
             .headline
                 margin-bottom: 30rem
                 font-size: 38rem
@@ -367,12 +361,14 @@ main
                 display: inline-block
                 max-width: 396rem
                 margin-bottom: 35rem
-                maxwidth: 396rem
                 font-size: 16rem
                 line-height: 24rem
                 color: #ffffff
                 font-weight: 400
                 font-family: "PTSans", sans-serif
+                text-align: center
+                +media(992)
+                    text-align: left
         .info-customer
             position: relative
             column-gap: 14rem
@@ -380,7 +376,9 @@ main
             width: 100%
             text-align: center
             +media(992)
-                width: 100%
+                width: auto
+            +media(2560)
+                width: 50%
             &:before,
             &::after
                 opacity: .2
@@ -415,7 +413,7 @@ main
                 font-style: italic
                 font-family: "Rubik"
                 line-height: 25rem
-                
+
             h3
                 margin-top: 15rem
                 font-size: 18rem
@@ -431,6 +429,11 @@ main
                 font-weight: 400
                 font-family: "Rubik"
                 text-align: center
+            +media(2560)
+                img:first-child
+                    width: 45rem
+                img:last-child
+                    width: 125rem
     .trip-headline
         margin: 70rem 0
         h2
@@ -451,8 +454,12 @@ main
     .cards-trip
         margin-bottom: 90rem
         column-gap: 30rem
+        row-gap: 30rem
     .trips
         width: 270rem
+        img
+            +media(2560)
+                width: 100%
     .figcaption-headline
         padding: 0 20rem
         .desc
@@ -506,6 +513,9 @@ main
                     .file-info
                         column-gap: 16rem
                         margin-bottom: 20rem
+                        img
+                            +media(2560)
+                                width: 35rem
                         .text-file
                             row-gap: 12rem
                     .docs
@@ -617,12 +627,19 @@ main
                         height: 22rem
                         left: 30rem
                         background: url(../img/phone.svg)
+                        background-size: contain
+                +media(2560)
+                    img:last-child
+                        width: 105rem
 
 footer
     .footer-bg
-        background: url(../img/footer.jpg) no-repeat
+        background: url(../img/footer.jpg) no-repeat center
+        background-size: cover
         width: 100%
-        height: 400rem
+        min-height: 377rem
+        +media(2560)
+            height: 320rem
     .footer
         height: 45rem
         background: #1a1a1a
