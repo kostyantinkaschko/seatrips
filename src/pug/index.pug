@@ -65,12 +65,12 @@ html(lang="uk")
             a.all(href="#") дивитись усі плани 
               img(src="img/next.png", alt="Компанія Sea-trips, інформація")
           hr
-          section.card-info
+          section.card-info.row
             figure
               figcaption
-                .img-info
+                .img-info.col-sm-12.col-md-12.col-lg-4
                   img(src="img/island.jpg", alt="Безлюдний острів") 
-                .info-text.row
+                .info-text.col-sm-12.col-md-12.col-lg-8
                   h2 Дивовижний безлюдний острів, який зводить людей з розуму
                   .content
                     .info.d-flex.flex-column 
@@ -86,12 +86,12 @@ html(lang="uk")
         .container-fluid.container-padding
           .container.d-flex.justify-content-between   
             .marketing-customer.col-md-12.col-lg-6
-              h2.headline
+              h2.headline.col-md-12.col-lg-6
                 | СПІЙМАЙ ХВИЛЮ 
                 span ЖИВИ ЯСКРАВО!
               p Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
               a.cta.btn.btn-warning(href="#") детальніше
-            .info-customer.d-flex.flex-column.align-items-center
+            .info-customer.d-flex.flex-column.align-items-center.col-xl-6
               img(src="img/quotes.png" alt="Компанія Sea-Trips відгуки")
               p.desc Чудова туaристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
               h3 Олег Набережний
@@ -112,14 +112,14 @@ html(lang="uk")
             +trips(card.serf)
         hr
         section.additional.d-flex.flex-wrap.justify-content-center
-          .additional-card2.dd-info
+          .additional-card2.dd-info.col-lg-3 col-md-6 col-sm-6
             h2 додаткова інформація
-          .additional-card.card-bg1 
+          .additional-card.card-bg1.col-lg-3 col-md-6 col-sm-6
             +additional(additional.graph)
-          .additional-card.card-bg2
+          .additional-card.card-bg2.col-lg-3 col-md-6 col-sm-6
             +additional(additional.info)
           figure.question
-            figcaption.d-flex.align-items-center.flex-column
+            figcaption.d-flex.align-items-center.flex-column.col-lg-3 col-md-6 col-sm-6
               h2.headline Задати питання
               p.desc.desc-margin Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
               a.phone(href="tel:+380505698511") +38 (050) 56 98 511
