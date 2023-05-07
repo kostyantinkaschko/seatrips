@@ -1,0 +1,35 @@
+
+mixin card(oneCard)
+    figure.card-figure.text-center
+        figcaption 
+            img(src=oneCard.img, alt=oneCard.alt, class="img") 
+            h2= oneCard.text
+            p.price #{oneCard.price}
+            if oneCard.isStar
+                a(href="javascript:void();" class="star") 
+            p.desc.text-start #{oneCard.desc} 
+
+mixin trips(oneCard)
+    figure.card-figure
+        figcaption
+            img(src=oneCard.img, alt=oneCard.alt, class="img") 
+            .figcaption-headline 
+                h2= oneCard.text
+                if oneCard.isStar
+                    a(href="javascript:void();" class="star")
+                p.desc.text-start= oneCard.desc
+                .info-figure.d-flex.justify-content-between
+                    sup.price #{oneCard.price}
+                    a(href=oneCard.href) #{oneCard.btnText}
+
+mixin additional(oneCard)
+    figure.figure-card 
+        figcaption 
+            .file-info.d-flex.align-items-center
+                .img-file
+                    img(src=oneCard.src, alt=oneCard.alt)
+                .text-file
+                    p.docs #{oneCard.alt}
+                    p.hdd-info #{oneCard.file}
+            p.desc #{oneCard.desc}
+            a(href=oneCard.href) #{oneCard.btnText} 

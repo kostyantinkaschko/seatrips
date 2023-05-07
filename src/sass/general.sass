@@ -1,0 +1,640 @@
+@import components/mixins
+
+html,
+body
+    margin: 0
+    padding: 0
+    font-size: 1px
+    +media(2560)
+        font-size: 2px
+    scroll-behavior: smooth
+    background-color: #f5f8fa
+    cursor: url(../img/cursor.cur), auto
+a
+    cursor: url(../img/pointer.cur), auto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+b
+    cursor: url(../img/text.cur), auto
+
+.hamburger-open,
+.active-burger
+    display: block
+
+.wrapper
+    max-width: 1170rem
+    margin: 0 auto
+    padding: 0 50rem
+
+.cta
+    width: 154rem
+    font-size: 16rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    color: #fdfcfb
+    font-weight: 400
+    font-family: Rubik
+    text-align: center
+    padding: 10rem 20rem
+    border-radius: 50rem
+    box-shadow: 0rem 4rem 10.5rem rgba(193,139,1,0.24)
+
+.container-padding
+    padding: 15rem
+
+.card-bg1
+    background: url(../img/home-bg.jpg)
+.card-bg2
+    background: url(../img/people-bg.jpg)
+header
+    text-align: center
+    background: linear-gradient(0, #f5f8fa 0%, transparent 25%), url(../img/bg.jpg)
+    background-size: cover
+    background-position: center
+    nav
+        a
+            text-decoration: none
+        .logo
+            column-gap: 7rem
+            img
+                height: 40rem
+        p
+            color: #ffffff
+            font-size: 36rem
+            font-weight: 500
+            font-family: "Exo 2"
+        ul
+            column-gap: 30rem
+        li
+            a
+                color: #fff
+                font-size: 14rem
+                text-transform: uppercase
+                font-weight: 400
+                font-family: "Rubik"
+                letter-spacing: 1rem
+                list-style: none
+                &:hover
+                    color: #ffb700
+    .line-top,
+    .line-bottom
+        opacity: .5
+        padding: 20rem
+        width: 60%
+        border-left: 4rem solid #fff
+        border-right: 4rem solid #fff
+    .line-top
+        border-top: 4rem solid #fff
+    .line-bottom
+        border-bottom: solid
+    h1
+        color: #ffffff
+        font-size: 72rem
+        letter-spacing: 1rem
+        text-transform: uppercase
+        font-weight: 400
+        font-family: "Rubik"
+    .middle-text
+        margin: 138rem 0 200rem
+        row-gap: 25rem
+        p
+            max-width: 528rem
+            font-size: 16rem
+            font-weight: 400
+            font-family: "Rubik"
+        h1
+            font-size: 65rem
+            +media(339)
+                font-size: 72rem
+    .text-da
+        flex-wrap: wrap
+        h3
+
+            max-width: 326rem
+            font-size: 36rem
+            letter-spacing: 1rem
+            text-transform: uppercase
+            color: #333
+            font-weight: 400
+            font-family: Rubik
+            text-align: center
+        p
+            font-size: 16rem
+            line-height: 22rem
+            color: #555555
+            font-weight: 400
+            font-style: italic
+            font-family: "Rubik"
+        .arrow
+            display: inline-block
+            width: 18rem
+            height: 20rem
+            margin: 35rem 0
+            background: url(../img/arrow.png)
+
+.navbar-toggler
+    filter: invert(1)
+    .navbar-toggler-icon
+        width: 59rem
+        height: 59rem
+main
+    .first-cards
+        margin-bottom: 70rem
+    .card-div
+        max-width: 350rem
+        +media(992)
+            max-width: 270rem
+    .cards
+        row-gap: 40rem
+    .cards-text
+        flex-wrap: wrap
+        width: 270rem
+        h3
+            font-size: 36rem
+            letter-spacing: 1rem
+            line-height: 40rem
+            text-transform: uppercase
+            color: #333333
+            font-weight: 400
+            font-family: "Rubik"
+        p
+            font-size: 16rem
+            color: #555555
+            font-weight: 400
+            font-style: italic
+            font-family: "Rubik"
+            &:last-child
+                margin-top: 20rem
+                font-size: 13rem
+                line-height: 19rem
+                color: #bbbbbb
+                font-weight: 400
+                font-family: "Rubik"
+        .desc-par
+            margin: 25rem 0 45rem
+    .cards-figure-padding
+        padding: 20rem
+    .card-figure
+        position: relative
+        transition: all .5s ease
+        &:hover
+            background: #fff
+            box-shadow: 0rem 4rem 10.5rem rgba(3,20,31,0.05)
+        h2
+            font-size: 18rem
+            line-height: 26rem
+            color: #333333
+            font-weight: 400
+            font-family: "Rubik"
+        .price
+            font-size: 24rem
+            line-height: 44rem
+            color: #0099ff
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+        .desc
+            font-size: 13rem
+            line-height: 19rem
+            color: #999999
+            font-weight: 400
+            font-family: "Rubik"
+            list-style: none
+        .star
+            position: absolute
+            top: 0
+            left: 0
+            width: 60rem
+            height: 60rem
+            background: url(../img/star.png) no-repeat center/contain
+            z-index: 3
+        img
+            margin-bottom: 25rem
+    .all
+        font-size: 12rem
+        text-transform: uppercase
+        color: #0099ff
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: center
+    .card-info
+        figcaption
+            column-gap: 60rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            +media(992)
+                display: flex
+        .img-info
+            margin-bottom: 30rem
+            width: 100%
+            +media(1300)
+                width: auto
+            +media(992)
+                margin: 0
+            img
+                width: 100%
+            +media(1300)
+                width: auto
+        .info-text,
+        .info
+            margin-top: 25rem
+            display: flex
+            justify-content: center
+            +media(1300)
+                margin: 0
+            +media(992)
+                justify-content: start
+        img
+            width: 100%
+            +media(992)
+                width: auto
+                height: auto
+        h2
+            font-size: 36rem
+            text-transform: uppercase
+            color: #333333
+            font-weight: 400
+            font-family: "Rubik"
+        p
+            font-size: 16rem
+            color: #333333
+            font-weight: 400
+            font-style: italic
+            font-family: "Rubik"
+    .card-info
+        margin: 80rem 0
+        figcaption
+            +media(1300)
+                flex-direction: row
+        .cta-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            row-gap: 30rem
+            margin-top: 35rem
+            column-gap: 10rem
+            +media(404)
+                flex-direction: row
+                align-content: start
+        .cta
+            width: 175rem
+    .info
+        p
+            +media(404)
+                width: 396px
+            +media(1300)
+                margin-right: 50rem
+            +media(1400)
+                margin: 0
+
+    .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        +media(778)
+            justify-content: space-between
+        +media(1400)
+            justify-content: space-between
+        +media(1300)
+            justify-content: start
+
+    .price-info
+        margin-top: 35rem
+        width: 260rem
+        height: 150rem
+        +media(404)
+            margin: 0
+        +media(1300)
+            margin: 30rem 0rem
+        padding: 40rem
+        background-color: #edf2f5
+        h2
+            font-size: 24rem
+            color: #0099ff
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+        p
+            font-size: 13rem
+            color: #999999
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+    .customer
+        padding: 90rem 0
+        background: url(../img/bg2.jpg) no-repeat
+        background-size: cover
+        .container
+            flex-direction: column
+            align-items: center
+            row-gap: 30rem
+            +media(992)
+                flex-direction: row
+        .cta
+            +media(670)
+                width: 645rem
+            +media(992)
+                width: 154rem
+        .marketing-customer
+            display: flex
+            flex-direction: column
+            align-items: center
+            +media(992)
+                display: block
+            .headline
+                margin-bottom: 30rem
+                font-size: 38rem
+                letter-spacing: 2rem
+                text-transform: uppercase
+                color: #ffffff
+                font-weight: 400
+                font-family: "Rubik"
+                text-align: center
+                +media(992)
+                    font-size: 56rem
+                    text-align: left
+                span
+                    color: #0099ff
+            p
+                display: inline-block
+                max-width: 396rem
+                margin-bottom: 35rem
+                maxwidth: 396rem
+                font-size: 16rem
+                line-height: 24rem
+                color: #ffffff
+                font-weight: 400
+                font-family: "PTSans", sans-serif
+        .info-customer
+            position: relative
+            column-gap: 14rem
+            padding: 30rem
+            width: 100%
+            text-align: center
+            +media(992)
+                width: 100%
+            &:before,
+            &::after
+                opacity: .2
+                content: ""
+                display: inline-block
+                position: absolute
+                top: 42rem
+                width: 20%
+                height: 73%
+                +media(456)
+                    width: 32%
+                    height: 63%
+                border-top: 4rem solid #fff
+                border-bottom: 4rem solid #fff
+            &::before
+                left: 0
+                border-left: 4rem solid #fff
+
+            &::after
+                right: 0
+                border-right: 4rem solid #fff
+
+            .desc
+                max-width: 423rem
+                // font-size: 12rem
+                // +media(406)    
+                //     font-size: 14rem
+                // +media(453)
+                font-size: 16rem
+                color: #ffffff
+                font-weight: 400
+                font-style: italic
+                font-family: "Rubik"
+                line-height: 25rem
+                
+            h3
+                margin-top: 15rem
+                font-size: 18rem
+                line-height: 26rem
+                color: #ffffff
+                font-weight: 400
+                font-family: "Rubik"
+                text-align: center
+            .klient
+                font-size: 14rem
+                line-height: 19rem
+                color: #999999
+                font-weight: 400
+                font-family: "Rubik"
+                text-align: center
+            img
+    .trip-headline
+        margin: 70rem 0
+        h2
+            font-size: 36rem
+            line-height: 42rem
+            text-transform: uppercase
+            color: #333333
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+        p
+            font-size: 16rem
+            color: #333333
+            font-weight: 400
+            font-style: italic
+            font-family: "Rubik"
+            text-align: center
+    .cards-trip
+        margin-bottom: 90rem
+    .trips
+        width: 270rem
+    .figcaption-headline
+        padding: 0 20rem
+        .desc
+            margin-bottom: 15rem
+            width: 230rem
+            font-size: 13rem
+            line-height: 19rem
+            color: #999999
+            font-weight: 400
+            font-family: "Rubik"
+        .info-figure
+            a
+                position: relative
+                margin-right: 20rem
+                font-size: 13px
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #ffb700
+                font-weight: 400
+                font-family: "Rubik"
+                text-align: center
+                &::after
+                    content: ""
+                    position: absolute
+                    right: -20px
+                    top: 2rem
+                    background: url(../img/next-orange.png) no-repeat
+                    background-size: contain
+                    width: 15px
+                    height: 15px
+    .additional
+        margin-top: 85rem
+        .additional-card
+            width: 270rem
+            height: 270rem
+            .figure-card
+                width: 270rem
+                height: 270rem
+                figcaption
+                    width: 270rem
+                    height: 270rem
+                    padding: 20rem
+                    .file-info
+                        column-gap: 16rem
+                        margin-bottom: 20rem
+                        .text-file
+                            row-gap: 12rem
+                    .docs
+                        font-size: 18px
+                        line-height: 24px
+                        color: #ffffff
+                        font-weight: 400
+                        font-family: "Rubik"4
+                    .hdd-info
+                        font-size: 13px
+                        line-height: 19px
+                        color: #bbbbbb
+                        font-weight: 400
+                        font-family: "Rubik"
+                    .desc
+                        width: 220px
+                        max-height: 70rem
+                        font-size: 13px
+                        line-height: 19px
+                        color: #fefefe
+                        font-weight: 400
+                        font-family: "Rubik"
+                    a
+                        position: relative
+                        padding: 5rem 14rem 5rem 25rem
+                        color: #ffb700
+                        font-size: 12px
+                        font-weight: 400
+                        font-family: "Rubik"
+                        text-align: center
+                        text-decoration: none
+                        letter-spacing: 0px
+                        line-height: 110px
+                        text-transform: uppercase
+                        border: 2px solid #ffb700
+                        border-radius: 35rem
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 8px
+                            top: 5px
+                            width: 15rem
+                            height: 11rem
+                            background: url(../img/cloud.svg) no-repeat
+                            background-size: 14rem
+        .dd-info
+            h2
+                font-size: 36px
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #333333
+                font-weight: 400
+                font-family: "Rubik"
+        .question
+            position: relative
+            width: 270rem
+            height: 320rem
+            &:before,
+            &::after
+                content: ""
+                position: absolute
+                width: 13%
+                height: 87%
+                top: 12px
+                border-top: 4px solid #ffb700
+                border-bottom: 4px solid #ffb700
+            &::before
+                left: 0
+                border-left: 4px solid #ffb700
+            &::after
+                right: 0
+                border-right: 4px solid #ffb700
+
+            figcaption
+                padding: 0 50rem
+                width: 270rem
+                height: 320rem
+                .headline
+                    margin-bottom: 27rem
+                h2
+                    font-size: 18px
+                    letter-spacing: 1px
+                    line-height: 26px
+                    color: #333333
+                    font-weight: 400
+                    font-family: "Rubik"
+                    text-align: center
+                .desc
+                    font-size: 13px
+                    line-height: 16px
+                    color: #999999
+                    font-weight: 400
+                    font-family: "Rubik"
+                    text-align: center
+                .desc-margin
+                    margin-bottom: 25rem
+                .phone
+                    margin-bottom: 27rem
+                    color: #0099ff
+                    font-size: 18px
+                    font-weight: 400
+                    font-family: "Rubik"
+                    text-align: center
+                    text-decoration: none
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 25rem
+                        height: 22rem
+                        left: 30px
+                        background: url(../img/phone.svg)
+
+footer
+    .footer-bg
+        background: url(../img/footer.jpg) no-repeat
+        max-width: 1600rem
+        height: 400rem
+    .footer
+        height: 45rem
+        background: #1a1a1a
+        p
+            padding: 14rem
+            font-size: 13px
+            line-height: 19px
+            color: #ffffff
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+
+.white-button
+    padding: 10rem 20rem
+    color: #0099ff
+    font-size: 16rem
+    text-decoration: none
+    border: 2rem solid #0099ff
+    border-radius: 50rem
+
+@keyframes burger
+    0%
+        transform: rotateX('0')
+    100%
+        transform: rotateX('360deg')

@@ -1,0 +1,133 @@
+include components/mixins
+include components/varibles
+
+doctype html
+html(lang="uk")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="shortcut icon" href="../img/logo.ico" type="image/x-icon")
+    title Strips - тур по морю, морський тур, катання на сьорфінгу 
+  body 
+    header
+      .container.container-padding
+        nav.navbar.navbar-expand-lg.d-flex.justify-content-between
+          a.logo.d-flex.align-items-center(href="index.html")
+            img(src="../img/logo.png" alt="тур по морю, морський тур, катання на сьорфінгу")
+            p trips
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.justify-content-end
+            ul.navbar-nav.justify-content-end
+              li.nav-item
+                a.active(aria-current='page' href='index.html') ГОловна
+              li.nav-item
+                a(href='#') послуги
+              li.nav-item.dropdown
+                a(href='#about' role='button' data-bs-toggle='dropdown' aria-expanded='false') про компанію
+              li.nav-item.dropdown
+                a(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Акції
+              li.nav-item.dropdown
+                a(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Партнери
+              li.nav-item.dropdown
+                a(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') відгуки
+              li.nav-item.dropdown
+                a(href='javasc#ript:void();' role='button' data-bs-toggle='dropdown' aria-expanded='false') Контакти
+      section.text-align-center.d-flex.flex-column.align-items-center
+        .middle-text.d-flex.flex-column.align-items-center
+          .line-top.border-top-4px.border-white
+          h1 Морські пригоди
+          p.fst-italic.text-light Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+          a.cta.btn.btn-warning(href="#") детальніше
+          .line-bottom.border-bottom-4px.border-white
+        .text-da.d-flex.flex-column.align-items-center
+          h3 обери свій план подорожі
+          p  Наша фірма -лідер на ринку у своїй сфері 
+          a.arrow(href="#about")
+    main
+      .container-fluid.container-padding
+        .container
+          section#about.first-cards.row.flex-column
+            .cards.row.justify-content-center.align-items-center
+              .cards-text.col-12.col-md-6.col-lg-3
+                h3 про нашу компанію
+                p.desc-par Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                a.cta.btn.btn-warning(href="#") детальніше
+                p * - зверніть увагу, зміна ціни може залежати від курсу долара.
+              .card-div.col-12.col-md-6.col-lg-3
+                +card(cardsInfo.bike)
+              .card-div.col-12.col-md-6.col-lg-3 
+                +card(cardsInfo.island)
+              .card-div.col-12.col-md-6.col-lg-3 
+                +card(cardsInfo.messages)
+            a.all(href="#") дивитись усі плани 
+              img(src="img/next.png", alt="Компанія Sea-trips, інформація")
+          hr
+          section.card-info
+            figure
+              figcaption
+                .img-info
+                  img(src="img/island.jpg", alt="Безлюдний острів") 
+                .info-text.row
+                  h2 Дивовижний безлюдний острів, який зводить людей з розуму
+                  .content
+                    .info.d-flex.flex-column 
+                      p Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                      .cta-block
+                        a.cta.btn.btn-warning(href="#") замовити тур
+                        a.cta.white-button(href="#") детальніше
+                    .price-info 
+                      h2 575 грн./день
+                      p В дануa вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+                  
+        section.customer
+          .container-fluid.container-padding
+            .container.d-flex.justify-content-between   
+              .marketing-customer.col-md-12.col-lg-6
+                h2.headline
+                  | СПІЙМАЙ ХВИЛЮ 
+                  span ЖИВИ ЯСКРАВО!
+                p Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                a.cta.btn.btn-warning(href="#") детальніше
+              .info-customer.d-flex.flex-column.align-items-center
+                img(src="img/quotes.png" alt="Компанія Sea-Trips відгуки")
+                p.desc Чудова туaристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
+                h3 Олег Набережний
+                p.klient клієнт
+                img(src="img/human1.png" alt="Відгуки компанії Sea-Trips")
+        .container.container-padding
+          section.trip-headline
+            h2 Спеціальні пропозиції тижня
+            p Гарячі праозиції, по-швидше обирай і поїхали!
+          section.cards-trip.d-flex.flex-wrap.justify-content-between
+            .trips.col-lg-3.col-md-6.col-sm-6
+              +trips(card.doubleTrip)
+            .trips.col-lg-3.col-md-6.col-sm-6
+              +trips(card.bikeTirp)
+            .trips.col-lg-3.col-md-6.col-sm-6 
+              +trips(card.islandTirp)
+            .trips.col-lg-3.col-md-6.col-sm-6 
+              +trips(card.serf)
+          hr
+          section.additional.d-flex.flex-wrap.justify-content-between
+            .additional-card.dd-info
+              h2 додаткова інформація
+            .additional-card.card-bg1 
+              +additional(additional.graph)
+            .additional-card.card-bg2
+              +additional(additional.info)
+            figure.question
+              figcaption.d-flex.align-items-center.flex-column
+                h2.headline Задати питання
+                p.desc.desc-margin Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                a.phone(href="tel:+380505698511") +38 (050) 56 98 511
+                h2 Анна Миколаївна
+                p.desc консультант
+                img(src="img/human2.png" alt="Задати питання Sea-Trips")
+    footer 
+      .footer-bg 
+      .footer 
+        p &copy; 2016 Cars.com All rights reserved.
+  script(src="js/scripts.js")
