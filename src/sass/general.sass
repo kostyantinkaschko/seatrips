@@ -233,14 +233,10 @@ main
         .img-info
             margin-bottom: 30rem
             width: 100%
-            +media(1300)
-                width: auto
             +media(992)
                 margin: 0
             img
                 width: 100%
-            +media(1300)
-                width: auto
         .info-text,
         .info
             margin-top: 25rem
@@ -250,6 +246,7 @@ main
                 margin: 0
             +media(992)
                 justify-content: start
+                align-items: start
         img
             width: 100%
             +media(992)
@@ -287,7 +284,7 @@ main
     .info
         p
             +media(404)
-                width: 396px
+                width: 396rem
             +media(1300)
                 margin-right: 50rem
             +media(1400)
@@ -301,8 +298,10 @@ main
             justify-content: space-between
         +media(1400)
             justify-content: space-between
+            flex-direction: row
         +media(1300)
             justify-content: start
+            align-items: start
 
     .price-info
         margin-top: 35rem
@@ -429,7 +428,6 @@ main
                 font-weight: 400
                 font-family: "Rubik"
                 text-align: center
-            img
     .trip-headline
         margin: 70rem 0
         h2
@@ -449,6 +447,7 @@ main
             text-align: center
     .cards-trip
         margin-bottom: 90rem
+        column-gap: 30rem
     .trips
         width: 270rem
     .figcaption-headline
@@ -465,8 +464,8 @@ main
             a
                 position: relative
                 margin-right: 20rem
-                font-size: 13px
-                letter-spacing: 1px
+                font-size: 13rem
+                letter-spacing: 1rem
                 text-transform: uppercase
                 color: #ffb700
                 font-weight: 400
@@ -475,14 +474,22 @@ main
                 &::after
                     content: ""
                     position: absolute
-                    right: -20px
+                    right: -20rem
                     top: 2rem
                     background: url(../img/next-orange.png) no-repeat
                     background-size: contain
-                    width: 15px
-                    height: 15px
+                    width: 15rem
+                    height: 15rem
     .additional
         margin-top: 85rem
+        column-gap: 30rem
+        row-gap: 30rem
+        .additional-card2
+            +media(768)
+                width: 270rem
+                height: 270rem
+            h2
+                text-align: center
         .additional-card
             width: 270rem
             height: 270rem
@@ -499,22 +506,22 @@ main
                         .text-file
                             row-gap: 12rem
                     .docs
-                        font-size: 18px
-                        line-height: 24px
+                        font-size: 18rem
+                        line-height: 24rem
                         color: #ffffff
                         font-weight: 400
                         font-family: "Rubik"4
                     .hdd-info
-                        font-size: 13px
-                        line-height: 19px
+                        font-size: 13rem
+                        line-height: 19rem
                         color: #bbbbbb
                         font-weight: 400
                         font-family: "Rubik"
                     .desc
-                        width: 220px
+                        width: 220rem
                         max-height: 70rem
-                        font-size: 13px
-                        line-height: 19px
+                        font-size: 13rem
+                        line-height: 19rem
                         color: #fefefe
                         font-weight: 400
                         font-family: "Rubik"
@@ -522,29 +529,29 @@ main
                         position: relative
                         padding: 5rem 14rem 5rem 25rem
                         color: #ffb700
-                        font-size: 12px
+                        font-size: 12rem
                         font-weight: 400
                         font-family: "Rubik"
                         text-align: center
                         text-decoration: none
-                        letter-spacing: 0px
-                        line-height: 110px
+                        letter-spacing: 0rem
+                        line-height: 110rem
                         text-transform: uppercase
-                        border: 2px solid #ffb700
+                        border: 2rem solid #ffb700
                         border-radius: 35rem
                         &::before
                             content: ""
                             position: absolute
-                            left: 8px
-                            top: 5px
+                            left: 8rem
+                            top: 5rem
                             width: 15rem
                             height: 11rem
                             background: url(../img/cloud.svg) no-repeat
                             background-size: 14rem
         .dd-info
             h2
-                font-size: 36px
-                letter-spacing: 1px
+                font-size: 36rem
+                letter-spacing: 1rem
                 text-transform: uppercase
                 color: #333333
                 font-weight: 400
@@ -559,15 +566,15 @@ main
                 position: absolute
                 width: 13%
                 height: 87%
-                top: 12px
-                border-top: 4px solid #ffb700
-                border-bottom: 4px solid #ffb700
+                top: 12rem
+                border-top: 4rem solid #ffb700
+                border-bottom: 4rem solid #ffb700
             &::before
                 left: 0
-                border-left: 4px solid #ffb700
+                border-left: 4rem solid #ffb700
             &::after
                 right: 0
-                border-right: 4px solid #ffb700
+                border-right: 4rem solid #ffb700
 
             figcaption
                 padding: 0 50rem
@@ -576,16 +583,16 @@ main
                 .headline
                     margin-bottom: 27rem
                 h2
-                    font-size: 18px
-                    letter-spacing: 1px
-                    line-height: 26px
+                    font-size: 18rem
+                    letter-spacing: 1rem
+                    line-height: 26rem
                     color: #333333
                     font-weight: 400
                     font-family: "Rubik"
                     text-align: center
                 .desc
-                    font-size: 13px
-                    line-height: 16px
+                    font-size: 13rem
+                    line-height: 16rem
                     color: #999999
                     font-weight: 400
                     font-family: "Rubik"
@@ -595,7 +602,7 @@ main
                 .phone
                     margin-bottom: 27rem
                     color: #0099ff
-                    font-size: 18px
+                    font-size: 18rem
                     font-weight: 400
                     font-family: "Rubik"
                     text-align: center
@@ -605,21 +612,21 @@ main
                         position: absolute
                         width: 25rem
                         height: 22rem
-                        left: 30px
+                        left: 30rem
                         background: url(../img/phone.svg)
 
 footer
     .footer-bg
         background: url(../img/footer.jpg) no-repeat
-        max-width: 1600rem
+        width: 100%
         height: 400rem
     .footer
         height: 45rem
         background: #1a1a1a
         p
             padding: 14rem
-            font-size: 13px
-            line-height: 19px
+            font-size: 13rem
+            line-height: 19rem
             color: #ffffff
             font-weight: 400
             font-family: "Rubik"

@@ -82,52 +82,52 @@ html(lang="uk")
                       h2 575 грн./день
                       p В дануa вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
                   
-        section.customer
-          .container-fluid.container-padding
-            .container.d-flex.justify-content-between   
-              .marketing-customer.col-md-12.col-lg-6
-                h2.headline
-                  | СПІЙМАЙ ХВИЛЮ 
-                  span ЖИВИ ЯСКРАВО!
-                p Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
-                a.cta.btn.btn-warning(href="#") детальніше
-              .info-customer.d-flex.flex-column.align-items-center
-                img(src="img/quotes.png" alt="Компанія Sea-Trips відгуки")
-                p.desc Чудова туaристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
-                h3 Олег Набережний
-                p.klient клієнт
-                img(src="img/human1.png" alt="Відгуки компанії Sea-Trips")
-        .container.container-padding
-          section.trip-headline
-            h2 Спеціальні пропозиції тижня
-            p Гарячі праозиції, по-швидше обирай і поїхали!
-          section.cards-trip.d-flex.flex-wrap.justify-content-between
-            .trips.col-lg-3.col-md-6.col-sm-6
-              +trips(card.doubleTrip)
-            .trips.col-lg-3.col-md-6.col-sm-6
-              +trips(card.bikeTirp)
-            .trips.col-lg-3.col-md-6.col-sm-6 
-              +trips(card.islandTirp)
-            .trips.col-lg-3.col-md-6.col-sm-6 
-              +trips(card.serf)
-          hr
-          section.additional.d-flex.flex-wrap.justify-content-between
-            .additional-card.dd-info
-              h2 додаткова інформація
-            .additional-card.card-bg1 
-              +additional(additional.graph)
-            .additional-card.card-bg2
-              +additional(additional.info)
-            figure.question
-              figcaption.d-flex.align-items-center.flex-column
-                h2.headline Задати питання
-                p.desc.desc-margin Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
-                a.phone(href="tel:+380505698511") +38 (050) 56 98 511
-                h2 Анна Миколаївна
-                p.desc консультант
-                img(src="img/human2.png" alt="Задати питання Sea-Trips")
+      section.customer
+        .container-fluid.container-padding
+          .container.d-flex.justify-content-between   
+            .marketing-customer.col-md-12.col-lg-6
+              h2.headline
+                | СПІЙМАЙ ХВИЛЮ 
+                span ЖИВИ ЯСКРАВО!
+              p Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+              a.cta.btn.btn-warning(href="#") детальніше
+            .info-customer.d-flex.flex-column.align-items-center
+              img(src="img/quotes.png" alt="Компанія Sea-Trips відгуки")
+              p.desc Чудова туaристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
+              h3 Олег Набережний
+              p.klient клієнт
+              img(src="img/human1.png" alt="Відгуки компанії Sea-Trips")
+      .container.container-padding
+        section.trip-headline
+          h2 Спеціальні пропозиції тижня
+          p Гарячі праозиції, по-швидше обирай і поїхали!
+        section.cards-trip.d-flex.flex-wrap.justify-content-center
+          .trips.col-lg-3.col-md-6.col-sm-6
+            +trips(card.doubleTrip)
+          .trips.col-lg-3.col-md-6.col-sm-6
+            +trips(card.bikeTirp)
+          .trips.col-lg-3.col-md-6.col-sm-6 
+            +trips(card.islandTirp)
+          .trips.col-lg-3.col-md-6.col-sm-6 
+            +trips(card.serf)
+        hr
+        section.additional.d-flex.flex-wrap.justify-content-center
+          .additional-card2.dd-info
+            h2 додаткова інформація
+          .additional-card.card-bg1 
+            +additional(additional.graph)
+          .additional-card.card-bg2
+            +additional(additional.info)
+          figure.question
+            figcaption.d-flex.align-items-center.flex-column
+              h2.headline Задати питання
+              p.desc.desc-margin Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+              a.phone(href="tel:+380505698511") +38 (050) 56 98 511
+              h2 Анна Миколаївна
+              p.desc консультант
+              img(src="img/human2.png" alt="Задати питання Sea-Trips")
     footer 
       .footer-bg 
       .footer 
         p &copy; 2016 Cars.com All rights reserved.
-  script(src="js/scripts.js")
+    script(src="js/scripts.js")
