@@ -10,6 +10,7 @@ body
     scroll-behavior: smooth
     background-color: #f5f8fa
     cursor: url(../img/cursor.cur), auto
+    animation: body-animation 3s forwards
 a,
 .btn,
 .cta
@@ -77,6 +78,7 @@ header
                     color: #fff
                     filter: drop-shadow(2px 4px 0 #ffb700)
             p
+                transition: all .2s ease
                 cursor: url(../img/pointer.cur), auto
             img
                 height: 40rem
@@ -712,8 +714,16 @@ footer
     text-decoration: none
     border: 2rem solid #0099ff
     border-radius: 50rem
+    transition: all .5s ease
+    &:hover
+        border-color: var(--bs-link-hover-color)
 @keyframes burger
     0%
         transform: rotateX('0')
     100%
         transform: rotateX('360deg')
+@keyframes body-animation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
