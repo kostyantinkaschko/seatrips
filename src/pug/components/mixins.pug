@@ -2,7 +2,8 @@
 mixin card(oneCard)
     figure.card-figure.cards-figure-padding
         figcaption.d-flex.flex-column.align-items-center
-            img(src=oneCard.img, alt=oneCard.alt, class="img") 
+            .img    
+                img(src=oneCard.img, alt=oneCard.alt, class="img") 
             h2= oneCard.text
             p.price #{oneCard.price}
             if oneCard.isStar
