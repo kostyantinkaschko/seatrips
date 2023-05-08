@@ -8,7 +8,7 @@ html(lang="uk")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="css/style.css")
-    link(rel="shortcut icon" href="../img/logo.ico" type="image/x-icon")
+    link(rel="shortcut icon" href="img/logo.ico" type="image/x-icon")
     title Strips - тур по морю, морський тур, катання на сьорфінгу 
   body 
     header
@@ -50,7 +50,7 @@ html(lang="uk")
       .container-fluid.container-padding
         .container.container-4k
           section#about.first-cards.row.flex-column.align-items-center
-            .cards.row.justify-content-center.align-items-center
+            .cards.row.align-items-center
               .cards-text.col-12.col-md-6.col-lg-3
                 h3 про нашу компанію
                 p.desc-par Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
@@ -65,7 +65,7 @@ html(lang="uk")
             a.all(href="#") дивитись усі плани 
               img(src="img/next.svg" alt="Компанія Sea-trips, інформація")
           hr
-          section.island-card 
+          section.island-card.container.container-4k
             figure 
               figcaption 
                 .card-island
@@ -103,7 +103,7 @@ html(lang="uk")
         section.trip-headline
           h2 Спеціальні пропозиції тижня
           p Гарячі праозиції, по-швидше обирай і поїхали!
-        section.cards-trip.d-flex.flex-wrap.justify-content-center
+        section.cards-trip.d-flex.flex-wrap
           .trips.col-lg-3.col-md-6.col-sm-6
             +trips(card.doubleTrip)
           .trips.col-lg-3.col-md-6.col-sm-6
@@ -113,7 +113,7 @@ html(lang="uk")
           .trips.col-lg-3.col-md-6.col-sm-6 
             +trips(card.serf)
         hr
-        section.additional.d-flex.flex-wrap.justify-content-center
+        section.additional.d-flex.flex-wrap
           .additional-card2.dd-info.col-lg-3.col-md-6.col-sm-6
             h2 додаткова інформація
           .additional-card.card-bg1.col-lg-3.col-md-6.col-sm-6
@@ -121,7 +121,7 @@ html(lang="uk")
           .additional-card.card-bg2.col-lg-3.col-md-6.col-sm-6
             +additional(additional.info)
           figure.question
-            figcaption.d-flex.align-items-center.flex-column.col-lg-3 col-md-6 col-sm-6
+            figcaption.d-flex.align-items-center.flex-column.col-lg-3.col-md-6.col-sm-6
               h2.headline Задати питання
               p.desc.desc-margin Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
               a.phone(href="tel:+380505698511") +38 (050) 56 98 511
