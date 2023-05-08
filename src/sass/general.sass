@@ -163,7 +163,7 @@ header
                 transform: scale(2)
 
 .navbar-toggler
-    filter: invert(1)
+    filter: hue-rotate(155deg)
     .navbar-toggler-icon
         width: 59rem
         height: 59rem
@@ -269,8 +269,11 @@ main
         font-family: "Rubik"
         text-align: center
         transition: all .5s ease
+        text-align: left
+        text-decoration: none
         &:hover
-            filter: invert(1)
+            filter: hue-rotate(155deg)
+            text-decoration: underline
         img
             width: 20rem
             padding-left: 7rem
@@ -435,6 +438,7 @@ main
                 border-right: 4rem solid #fff
 
             .desc
+                mt
                 max-width: 423rem
                 // font-size: 12rem
                 // +media(406)    
@@ -520,8 +524,10 @@ main
                 font-family: "Rubik"
                 text-align: center
                 transition: all .5s ease
+                text-decoration: none
                 &:hover
-                    filter: invert(1)
+                    filter: hue-rotate(155deg)
+                    text-decoration: underline
                 &::after
                     content: ""
                     position: absolute
@@ -607,7 +613,7 @@ main
                         border-radius: 35rem
                         transition: all .5s ease
                         &:hover
-                            filter: invert(1)
+                            filter: hue-rotate(155deg)
                         &::before
                             content: ""
                             position: absolute
@@ -684,11 +690,11 @@ main
                     &:hover
                         color: #ff6600
                         &::before
-                            filter: invert(1)
+                            filter: hue-rotate(155deg)
                     &:focus
                         color: #ff6600
                         &::before
-                            filter: invert(1)
+                            filter: hue-rotate(155deg)
                     &::before
                         content: ""
                         position: absolute
