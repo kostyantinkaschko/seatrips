@@ -10,7 +10,9 @@ body
     scroll-behavior: smooth
     background-color: #f5f8fa
     cursor: url(../img/cursor.cur), auto
-a
+a,
+.btn,
+.cta
     cursor: url(../img/pointer.cur), auto
 
 h1,
@@ -64,6 +66,16 @@ header
             text-decoration: none
         .logo
             column-gap: 7rem
+            &:hover
+                p
+                    color: #ffb700
+            &:focus
+
+                p
+                    color: #fff
+                    filter: drop-shadow(2px 4px 0 #ffb700)
+            p
+                cursor: url(../img/pointer.cur), auto
             img
                 height: 40rem
         p
@@ -140,6 +152,9 @@ header
             margin: 35rem 0
             background: url(../img/arrow.svg)
             background-size: 30rem
+            transition: all .5s ease
+            &:hover
+                transform: scale(2)
 
 .navbar-toggler
     filter: invert(1)
@@ -161,6 +176,10 @@ main
         justify-content: center
         text-align: center
         width: 270rem
+        padding: 20rem
+        transition: all .5s ease
+        &:hover
+            background-color: #fff
         +media(768)
             justify-content: start
             text-align: left
@@ -237,6 +256,8 @@ main
         font-weight: 400
         font-family: "Rubik"
         text-align: center
+        &:hover
+            filter: invert(1)
         img
             width: 20rem
             padding-left: 7rem
@@ -480,6 +501,9 @@ main
                 font-weight: 400
                 font-family: "Rubik"
                 text-align: center
+                transition: all .5s ease
+                &:hover
+                    filter: invert(1)
                 &::after
                     content: ""
                     position: absolute
@@ -494,14 +518,23 @@ main
         column-gap: 30rem
         row-gap: 30rem
         .additional-card2
+            transition: all .5s ease
+            &:hover
+                filter: drop-shadow(2px 4px 6px black)
+                transform: scale(1.1)
             +media(768)
                 width: 270rem
                 height: 270rem
             h2
                 text-align: center
+
         .additional-card
             width: 270rem
             height: 270rem
+            transition: all .5s ease
+            &:hover
+                filter: drop-shadow(2px 4px 6px black)
+                transform: scale(1.1)
             .figure-card
                 width: 270rem
                 height: 270rem
@@ -551,6 +584,9 @@ main
                         text-transform: uppercase
                         border: 2rem solid #ffb700
                         border-radius: 35rem
+                        transition: all .5s ease
+                        &:hover
+                            filter: invert(1)
                         &::before
                             content: ""
                             position: absolute
@@ -572,6 +608,17 @@ main
             position: relative
             width: 270rem
             height: 320rem
+            transition: all .5s ease
+            &:hover
+                &:before,
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 29%
+                    height: 110%
+                    top: -14rem
+                    border-top: 4rem solid #ffb700
+                    border-bottom: 4rem solid #ffb700
             &:before,
             &::after
                 content: ""
@@ -581,6 +628,7 @@ main
                 top: 12rem
                 border-top: 4rem solid #ffb700
                 border-bottom: 4rem solid #ffb700
+                transition: all .5s ease
             &::before
                 left: 0
                 border-left: 4rem solid #ffb700
@@ -619,12 +667,22 @@ main
                     font-family: "Rubik"
                     text-align: center
                     text-decoration: none
+                    transition: all .5s ease
+                    &:hover
+                        color: #ff6600
+                        &::before
+                            filter: invert(1)
+                    &:focus
+                        color: #ff6600
+                        &::before
+                            filter: invert(1)
                     &::before
                         content: ""
                         position: absolute
-                        width: 25rem
+                        width: 20rem
                         height: 22rem
                         left: 30rem
+                        transition: all .5s ease
                         background: url(../img/phone.svg)
                         background-size: contain
                 +media(2560)
