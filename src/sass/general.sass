@@ -317,9 +317,10 @@ main
                                 justify-content: space-between
                             p:first-child
                                 margin: 25rem 0 35rem 0
-                                max-width: 465rem
+                                +media(992)
+                                    max-width: 465rem
                                 +media(2560)
-                                    max-width: 425rem
+                                    max-width: 475rem
                                 font-size: 16rem
                                 line-height: 24rem
                                 color: #333333
@@ -395,7 +396,6 @@ main
                     color: #0099ff
             p
                 display: inline-block
-                max-width: 396rem
                 margin-bottom: 35rem
                 font-size: 16rem
                 line-height: 24rem
@@ -405,6 +405,8 @@ main
                 text-align: center
                 +media(992)
                     text-align: left
+                +media(2560)
+                    width: 540rem
         .info-customer
             position: relative
             column-gap: 14rem
@@ -438,12 +440,9 @@ main
                 border-right: 4rem solid #fff
 
             .desc
-                mt
-                max-width: 423rem
-                // font-size: 12rem
-                // +media(406)    
-                //     font-size: 14rem
-                // +media(453)
+                margin-top: 15rem
+                +media(992)
+                    max-width: 423rem
                 font-size: 16rem
                 color: #ffffff
                 font-weight: 400
