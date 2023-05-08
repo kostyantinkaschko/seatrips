@@ -259,21 +259,24 @@ main
         img
             margin-bottom: 25rem
             width: 65rem
-    .all
-        width: 200rem
-        margin-top: 40rem
-        font-size: 12rem
-        text-transform: uppercase
-        color: #0099ff
-        font-weight: 400
-        font-family: "Rubik"
-        text-align: center
-        transition: all .5s ease
-        text-align: left
-        text-decoration: none
-        &:hover
-            filter: hue-rotate(155deg)
-            text-decoration: underline
+            height: 65rem
+    .all-div
+        display: flex
+        justify-content: center
+        a
+            margin-top: 40rem
+            font-size: 12rem
+            text-transform: uppercase
+            color: #0099ff
+            font-weight: 400
+            font-family: "Rubik"
+            text-align: center
+            transition: all .5s ease
+            text-align: left
+            text-decoration: none
+            &:hover
+                filter: hue-rotate(155deg)
+                text-decoration: underline
         img
             width: 20rem
             padding-left: 7rem
@@ -317,8 +320,6 @@ main
                                 justify-content: space-between
                             p:first-child
                                 margin: 25rem 0 35rem 0
-                                +media(992)
-                                    max-width: 465rem
                                 +media(2560)
                                     max-width: 475rem
                                 font-size: 16rem
@@ -339,6 +340,7 @@ main
                                     justify-content: start
                             .price-info
                                 max-width: 260rem
+                                margin-left: 25rem
                                 padding: 20rem
                                 background-color: #edf2f5
                                 transition: all .5s ease
