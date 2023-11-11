@@ -16,6 +16,28 @@ a,
 .cta
     cursor: url(../img/pointer.cur), auto
 
+/* Кастомний стиль скроллбару */
+::-webkit-scrollbar
+    width: 12px
+
+::-webkit-scrollbar-track
+    background: #f1f1f1
+
+::-webkit-scrollbar-thumb
+    background-color: #888
+    border-radius: 6px
+    border: 3px solid #f1f1f1
+
+/* Забезпечує видимість скроллбару при наведенні */
+::-webkit-scrollbar-thumb:hover
+    background-color: #555
+
+/* Забезпечує реагування на прокрутку колесом миші */
+::-webkit-scrollbar-button
+    display: none
+    scrollbar-width: thin
+    scrollbar-color: #888 #f1f1f1
+/* Сховати стандартний скроллбар для Firefox */
 .img
     height: 65rem
     margin-bottom: 25rem
@@ -29,6 +51,21 @@ h5,
 p,
 b
     cursor: url(../img/text.cur), auto
+
+.logo-container
+    position: relative
+    display: flex
+    align-items: center
+    color: #fff
+
+    .additional-text
+        display: none
+        margin-left: 5px
+
+.logo:hover .additional-text
+    display: block
+    color: #ffb700
+    animation: body-animation .3s forwards
 
 .hamburger-open,
 .active-burger
@@ -69,6 +106,8 @@ header
     background: linear-gradient(0, #f5f8fa 0%, transparent 25%), url(../img/bg.jpg)
     background-size: cover
     background-position: bottom
+    animation: header 8s infinite
+
     nav
         a
             transition: all .5s ease
@@ -76,14 +115,14 @@ header
         .logo
             column-gap: 7rem
             transition: all .5s ease
-            &:hover
+            color: #fff
+            &:focus
+                .additional-text
+                    display: block
+                    color: #ffb700
                 p
                     color: #ffb700
-            &:focus
-
-                p
-                    color: #fff
-                    filter: drop-shadow(2px 4px 0 #ffb700)
+                    filter: drop-shadow(2px 4px 0 #fff)
             p
                 transition: all .2s ease
                 cursor: url(../img/pointer.cur), auto
@@ -110,14 +149,9 @@ header
     .line-top,
     .line-bottom
         opacity: .5
-        padding: 20rem
         width: 60%
         border-left: 4rem solid #fff
         border-right: 4rem solid #fff
-    .line-top
-        border-top: 4rem solid #fff
-    .line-bottom
-        border-bottom: 4rem solid #fff
     h1
         color: #ffffff
         font-size: 72rem
@@ -758,3 +792,15 @@ footer
         opacity: 0
     100%
         opacity: 1
+@keyframes padding
+    0%
+        padding: 0
+    100%
+        padding: 20rem
+@keyframes header
+    0%,100%
+        background-position: 50% 50%
+    50%
+        background-position: 55% 55%
+    80%
+        background-position: 30% 30%   
